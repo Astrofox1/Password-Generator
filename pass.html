@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <meta charset="UTF-8" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pass.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="container">
+        <form action="#">
+            <h2>Password Generator</h2>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <p class="pass"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="length">Password Length</label>
+                    </td>
+                    <td>
+                        <input type="number" name="length" id="length"  min="4" max="20" value="8">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="upper">Include Uppercase letters</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="upper" id="upper" checked>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lower">Include Lowercase letters</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="lower" id="lower" checked>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="num">Include Numbers</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="num" id="num" checked>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="sym">Include Symbols</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="sym" id="sym" checked>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Generate Password" id="sub">            
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+    
+
+
+
+    <script src="pass.js"></script>
+  </body>
+</html>
